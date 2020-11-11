@@ -1,0 +1,209 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+    vertical-align: baseline;
+    width:100%;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* ^^^^ Eric Myers Reset */
+
+.topHead{
+    background-color: #e5e5e5;
+    padding:2rem;
+}
+
+h1{
+    font-size:300%;
+    padding:2rem 0 2rem 3rem;
+}
+
+.topNav{
+    padding-left:10%;
+    display:flex;
+    flex-direction:row;
+}
+
+.nav{
+    font-size:.8rem;
+    text-align: center;
+    color:black;
+    text-decoration: none;
+    width:6%;
+    border:1px solid black;
+    padding:20px;
+    height:12px;
+}
+.nav:hover,
+.nav:active{
+    color:white;
+    background-color:black;
+}
+/* This is where the first the section of the first photo starts */
+
+.secondSection{
+    display:flex;
+    flex-direction:row;
+    justify-content: right;
+}
+
+.firstPhoto{
+    width:50%;
+    height:auto;
+    padding:1rem 1rem;
+}
+
+.right{
+    padding-top:6rem;
+    text-align: center;
+}
+
+/* My Work 8 boxes */
+
+.myWorkRow1{
+    display:flex;
+    flex-direction: row;
+}
+
+.myWorkRow2{
+    display:flex;
+    flex-direction: row;
+}
+/* This is where the footer begin's */
+
+.footer{
+    text-align:center;
+    background-color:#e5e5e5;
+    height:20vh;
+
+}
+
+h5{
+    padding:2rem;
+    font-size: 2rem;
+}
+
+.contactMe{
+    color:black;
+    text-decoration: none;
+    background-color:white;
+    padding:1rem;
+    border:1px solid black;
+}
+
+.contactMe:hover,
+.contactMe:active{
+    background-color: black;
+    color:white;
+}
+/* This is where I make the responsive Layout  */
+@media(max-width:800px){
+  html{
+    width:100%;
+  }
+  .topNav a{
+    font-size:80%;
+    
+  }
+  .nav{
+    width:6%;
+  }
+    .topHead{
+        padding: 0.5rem;
+        font-size:80%;
+    }
+  .right{
+    font-size:80%;
+    margin:10%;
+    padding:2%; 
+  }
+  .footer{
+    font-size:70%;
+    width:100%;
+  }
+  h5{
+    font-size:1rem;
+    margin-left:-5%;
+    
+  }
+}
+
+@media(max-width:500px){
+  .topHead{
+    padding:10px;
+    font-size:80%;
+  }
+  h1{
+    font-size:2rem;
+  }
+  
+  .nav{
+    width:30%;
+    margin-left:15%;
+  }
+  
+    .topNav{
+        flex-direction: column;
+        align-items: stretch;
+    }
+  .secondSection{
+    flex-direction:column;
+  }
+  .firstPhoto{
+    width:92%;
+  }
+  .right{
+    margin-left:0%;
+  }
+  
+  .myWorkRow1{
+    flex-direction:column;
+    
+  }
+  .myWorkRow2{
+    flex-direction:column;
+  }
+  
+}
