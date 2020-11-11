@@ -22,7 +22,6 @@ time, mark, audio, video {
 	margin: 0;
 	padding: 0;
 	border: 0;
-	font-size: 62.5%;
 	font: inherit;
     vertical-align: baseline;
 }
@@ -54,8 +53,8 @@ table {
 
 .topHead{
     background-color: #e5e5e5;
-    margin:3%;
-    width:90%
+    width:96%;
+    padding:2%;
 }
 
 h1{
@@ -65,7 +64,6 @@ h1{
 
 .topNav{
     width:80%;
-    margin-left:5%;
     display:flex;
     flex-direction:row;
 }
@@ -90,7 +88,7 @@ h1{
 .secondSection{
     display:flex;
     flex-direction:row;
-    justify-content: right;
+    justify-content: space-between;
 }
 
 .firstPhoto{
@@ -100,8 +98,9 @@ h1{
 }
 
 .right{
-    padding-top:8rem;
+    padding-top:15rem;
     text-align: center;
+    width:50%;
     font-size: 2.2rem;
 }
 .right a{
@@ -115,12 +114,14 @@ h1{
     display:flex;
     flex-direction: row;
     justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 
 .myWorkRow2{
     display:flex;
     flex-direction: row;
     justify-content: space-evenly;
+    flex-wrap:wrap;
 }
 /* This is where the footer begin's */
 
