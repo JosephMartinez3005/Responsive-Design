@@ -1,7 +1,13 @@
 
 /* This is where I make the responsive Layout  */
-@media only screen and (max-width:1366px){
-    
+@media only screen and (max-width:1489px){
+    .right{
+      font-size: 1.8rem;
+      margin-top:-6%;
+    }
+    .work{
+      padding:5%;
+    }
 }
 
 
@@ -45,6 +51,7 @@
       height:200vh;
       padding:0;
       align-items: flex-end;
+      padding-bottom: 8rem;
     }
     
     .myWorkRow2{
@@ -56,11 +63,10 @@
 
     .work{
       width:80%;
-      padding:0px;
     }
     .footer{
       display:flex;
-
+      margin-top:15rem;
 
     }
     h5{
@@ -88,7 +94,8 @@
     
       .topNav{
           flex-direction: column;
-          align-items: center;
+          align-items: flex-start;
+          width:20%
       }
     .secondSection{
       flex-direction:column;
@@ -97,14 +104,15 @@
     .firstPhoto{
       width:92%;
     }
-    .right{
-  
-    }
     
     .myWorkRow1{
       flex-direction:column;
       align-items: center;
       height:120vh
+    }
+    .work{
+      margin-left: 2%;
+      padding:0%;
     }
     .myWorkRow2{
       flex-direction:column;
@@ -147,9 +155,10 @@
     
       .topNav{
           flex-direction: column;
+          justify-content: center;
           margin:2.2rem;
-          width:70%;
-          margin-left:16%;
+          width:40%;
+          margin-left:1%;
       }
     .secondSection{
       flex-direction:column;
@@ -168,6 +177,7 @@
     .work{
         width:95%;
         margin-left:2.5%;
+        padding:0px;
     }
     .myWorkRow2{
       flex-direction:column;
@@ -182,7 +192,8 @@
         align-items: center;
     }
    .contactMe{
-       width:40%;
+       width:30%;
+       height:1vh
        
    }
     
