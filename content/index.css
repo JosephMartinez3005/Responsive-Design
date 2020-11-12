@@ -2,9 +2,9 @@
    v2.0 | 20110126
    License: none (public domain)
 */
-* {
+/* * {
     border: 1px solid black !important;
-  }
+  } */
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -50,6 +50,9 @@ table {
 }
 
 /* ^^^^ Eric Myers Reset */
+*{
+    border: 1px solid black !important;
+}
 
 .topHead{
     background-color: #e5e5e5;
@@ -126,7 +129,10 @@ h1{
 /* This is where the footer begin's */
 
 .footer{
-    text-align:center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
     background-color:#e5e5e5;
     height:20vh;
 
